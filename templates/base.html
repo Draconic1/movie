@@ -1,0 +1,15 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    Киноафиша <br>
+    <today style="font-style: italic;">Сегодня {{ data.current_date }}</today>
+    <content>{% block content %}{% endblock %}</content>
+</body>
+</html>

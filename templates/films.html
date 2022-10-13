@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Бронь на фильмы{% endblock %}
+
+{% block content %}
+    <ul>
+        Бронь на фильмы:<br>
+        {% for film in data.films %}
+            {% include 'qw.html' with elem=film %}
+        {% empty %}
+            <li>Список пуст</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+body {
+    font-size: 12pt;
+    margin-left: 250px;
+    margin-right: 750px;
+    font-family: Segoe UI;
+
+}
+
+content {
+    display: block;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #dee2e6;
+    padding: 20px;
+}

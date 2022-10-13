@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Бронь №{{ data.film.id }}{% endblock %}
+
+{% block content %}
+    <div>Информация о фильме №{{ data.film.id }} </div><br>
+    <div>Название: {{ data.film.name }}</div>
+    <div>Описание: {{ data.film.description }}</div>
+    <div>Жанры: {{ data.film.genres }}</div>
+    <div>Страна: {{ data.film.country }}</div>
+    <div>Год: {{ data.film.year }}</div>
+{% endblock %}
