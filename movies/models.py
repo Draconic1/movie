@@ -4,7 +4,7 @@ from django.db import models
 class Users(models.Model):
     fio = models.CharField(max_length=255, verbose_name="ФИО")
     email = models.CharField(max_length=50, verbose_name="E-mail")
-    phone = models.IntegerField(verbose_name="Номер телефона")
+    phone = models.PositiveBigIntegerField(verbose_name="Номер телефона")
 
 
 class Films(models.Model):
