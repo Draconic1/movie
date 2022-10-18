@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Выбор места{% endblock %}
+
+{% block content %}
+    <div>Свободные места:</div>
+
+    <br><div>Зал 1:</div>
+    {% for seat in data.seat %}
+        {% if seat.hall == 1 %}
+           {{ seat.id }} <a href="{% url 'order_url' seat.id %}">Место {{ seat.number }}, цена: {{ seat.price }}</a><br>
+        {% endif %}
+    {% empty %}
+        <li>Мест нет</li>
+    {% endfor %}
+
+    <br><div>Зал 2:</div>
+    {% for seat in data.seat %}
+        {% if seat.hall == 2 %}
+           {{ seat.id }} <a href="{% url 'order_url' seat.id %}">Место {{ seat.number }}, цена: {{ seat.price }}</a><br>
+        {% endif %}
+    {% empty %}
+        <li>Мест нет</li>
+    {% endfor %}
+
+{% endblock %}

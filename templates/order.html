@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Бронь{% endblock %}
+
+{% block content %}
+    Бронь места №{{ data.seat.id }}<br>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Введите ФИО"><br>
+        <input type="text" placeholder="Введите e-mail"><br>
+        <input type="text" placeholder="Введите номер телефона"><br>
+        <button type="submit">Забронировать</button>
+    </form>
+
+{% endblock %}
