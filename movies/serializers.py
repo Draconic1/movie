@@ -8,13 +8,13 @@ class FilmsSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class FilmsSerializer(serializers.ModelSerializer):
+class UsersSerializer(serializers.ModelSerializer):
     class Meta:
         model = Users
         fields = "__all__"
 
 
-class FilmsSerializer(serializers.ModelSerializer):
+class SeatsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Seats
         fields = "__all__"

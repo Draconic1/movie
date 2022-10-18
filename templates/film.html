@@ -8,5 +8,7 @@
     <div>Описание: {{ data.film.description }}</div>
     <div>Жанры: {{ data.film.genres }}</div>
     <div>Страна: {{ data.film.country }}</div>
-    <div>Год: {{ data.film.year }}</div>
+    <div>Год: {{ data.film.year }}</div><br>
+
+    <div><a href="{% url 'seats_url' data.film.id %}">Забронировать</a></div>
 {% endblock %}

@@ -15,4 +15,6 @@ urlpatterns = [
     path('api/v1/', include(router.urls)),
     path('', views.index),
     path('films/<int:id>/', views.GetFilm, name='films_url'),
+    path('seat/<int:id>/', views.GetSeat, name='seats_url'),
+    path('seats/<int:id>/', views.MakeOrder, name='order_url'),
 ]

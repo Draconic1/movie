@@ -16,8 +16,8 @@ class Films(models.Model):
 
 
 class Seats(models.Model):
-    number = models.CharField(max_length=30, verbose_name="Номер места")
-    row = models.CharField(max_length=30, verbose_name="Ряд")
+    number = models.IntegerField(verbose_name="Номер места")
+    row = models.IntegerField(verbose_name="Ряд")
     hall = models.IntegerField(verbose_name="Зал")
     price = models.FloatField(verbose_name="Стоимость")
 
