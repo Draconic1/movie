@@ -13,6 +13,7 @@ class Films(models.Model):
     genres = models.CharField(max_length=255, verbose_name="Жанры")
     country = models.CharField(max_length=255, verbose_name="Страна")
     year = models.IntegerField(verbose_name="Год")
+    image = models.CharField(max_length=255, verbose_name="Изображение", default="")
 
 
 class Seats(models.Model):
